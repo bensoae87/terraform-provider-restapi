@@ -86,13 +86,13 @@ func NewAPIObject(iClient *APIClient, opts *apiObjectOpts) (*APIObject, error) {
 		opts.postPath = opts.path
 	}
 	if opts.getPath == "" {
-		opts.getPath = opts.path + "/{id}"
+		opts.getPath = opts.path
 	}
 	if opts.putPath == "" {
-		opts.putPath = opts.path + "/{id}"
+		opts.putPath = opts.path
 	}
 	if opts.deletePath == "" {
-		opts.deletePath = opts.path + "/{id}"
+		opts.deletePath = opts.path
 	}
 	if opts.searchPath == "" {
 		opts.searchPath = opts.path
